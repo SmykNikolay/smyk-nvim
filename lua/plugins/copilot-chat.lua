@@ -49,6 +49,14 @@ return {
         mode = { "n", "v" },
       },
       {
+        "<leader>at",
+        function()
+          require("CopilotChat").ask("Translate last answer to Russian")
+        end,
+        desc = "Translate last answer to Russian",
+        mode = { "n", "v" },
+      },
+      {
         "<leader>ax",
         function()
           return require("CopilotChat").reset()
