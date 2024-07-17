@@ -61,7 +61,7 @@ return {
           },
           keys = {
             {
-              "gtD",
+              "gD",
               function()
                 local params = vim.lsp.util.make_position_params()
                 LazyVim.lsp.execute({
@@ -73,7 +73,7 @@ return {
               desc = "Goto Source Definition",
             },
             {
-              "gtR",
+              "gR",
               function()
                 LazyVim.lsp.execute({
                   command = "typescript.findAllFileReferences",
@@ -84,27 +84,27 @@ return {
               desc = "File References",
             },
             {
-              "gtco",
+              "<leader>co",
               LazyVim.lsp.action["source.organizeImports"],
               desc = "Organize Imports",
             },
             {
-              "gtcM",
+              "<leader>cM",
               LazyVim.lsp.action["source.addMissingImports.ts"],
               desc = "Add missing imports",
             },
             {
-              "gtcu",
+              "<leader>cu",
               LazyVim.lsp.action["source.removeUnused.ts"],
               desc = "Remove unused imports",
             },
             {
-              "gtcD",
+              "<leader>cD",
               LazyVim.lsp.action["source.fixAll.ts"],
               desc = "Fix all diagnostics",
             },
             {
-              "gtcV",
+              "<leader>cV",
               function()
                 LazyVim.lsp.execute({ command = "typescript.selectTypeScriptVersion" })
               end,
